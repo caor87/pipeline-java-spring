@@ -59,7 +59,8 @@ jobs:
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: Springbootapp-env-2
+        application_name: spring-boot-app
+        environment_name: Springbootapp-env-2
         version_label: ${{github.SHA}}
         region: us-east-1
         deployment_package: gitaction-0.0.1-SNAPSHOT.jar
