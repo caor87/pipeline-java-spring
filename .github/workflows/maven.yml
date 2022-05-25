@@ -57,8 +57,8 @@ jobs:
     - name: Deploy to EBS
       uses: einaregilsson/beanstalk-deploy@v13
       with:
-        aws_acces_key: ${{ secrets.AWS_ACCES_KEY_ID }}
-        aws_secret_key: ${{ secrets.AWS_SECRET_ACCES_KEY }}
+        aws_acces_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: Springbootapp-env-2
         version_label: ${{ github.SHA }}
         region: us-east-1
