@@ -23,5 +23,10 @@ class HomeControllerTest {
 	public void homeCOntroller_getPeople_ReturnsListOf20People() {
 		assertEquals(homeController.getPeople().size(), 20);
 	}
+	
+	@Test
+	public void homeCOntroller_getAddress_ReturnsListOf5Adress() {
+		assertEquals(homeController.getAddres().size(), 5);
+	}
 
 }
