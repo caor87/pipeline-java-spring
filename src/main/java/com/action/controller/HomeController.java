@@ -22,6 +22,7 @@ public class HomeController {
 	
 	@GetMapping("/people")
 	public List<Person> getPeople(){
+		//OK
 		return RandomPerson.get().listOf(20);
 	}
 	
