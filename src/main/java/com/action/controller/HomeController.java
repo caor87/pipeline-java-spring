@@ -27,6 +27,7 @@ public class HomeController {
 	
 	@GetMapping("/address")
 	public List<Address> getAddres(){
+		//OK
 		return RandomAddress.get().listOf(5);
 	}
 
